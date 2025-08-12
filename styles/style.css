@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #222831;
+    --secondary-color: #DFD0B8;
+    --terciary-color: #948979;
+    --hover-color: #393E46;
+
+    --main-font: 'Montserrat', sans-serif;
+    --secondary-font: 'Krona One', sans-serif;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.container-header {
+    padding:2% 0 0 15%;
+}
+.container-menu {
+    display: flex;
+    gap: 8px;
+    width: 50%;
+}
+    
+.container-menu-link {
+    font-family: var(--main-font);
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+
+
+}
+
+p {
+    color: var(--secondary-color);
+}
+
+.destaque {
+    color: var(--terciary-color);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 15%;
+    gap: 82px;
+}
+
+.container-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+    
+
+.container-title {
+    font-size: 2.25rem;
+    margin-bottom: 20px;
+    font-family: var(--secondary-font)
+}
+
+.content {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-family: var(--main-font);
+}
+
+.container-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.links-sub {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.container-links-text {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+    width: 280px;
+    text-align: center;
+    border-radius: 8px;
+    font-size:1.5rem;
+    padding: 21.5px;
+    font-family: var(--main-font);
+}
+
+.container-links-text:hover {
+    background-color: var(--hover-color);
+}
+
+main {
+    flex: 1;
+}
+
+.container-image {
+    width: 50%;
+    
+}
+
+.footer-text {
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: 1.5rem;
+    color: black;
+    background-color: var(--secondary-color);
+    padding: 24px;
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column-reverse;
+        padding: 5%;
+
+    }
+    .container-header {
+        padding: 10%;
+        justify-content: center;
+    }
+    .container-menu {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .container-text {
+        width: auto
+}
